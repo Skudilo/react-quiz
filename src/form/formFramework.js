@@ -1,6 +1,6 @@
 export function createControl(config, validation) {
   return {
-     ...config,
+    ...config,
     validation,
     valid: !validation,
     touched: false,

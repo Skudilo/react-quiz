@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './Input.module.css'
+import React from 'react'
+import classes from './Input.css'
 
 function isInvalid({valid, touched, shouldValidate}) {
   return !valid && shouldValidate && touched
@@ -26,11 +26,11 @@ const Input = props => {
 
       {
         isInvalid(props)
-          ? <span>{props.errorMessage || 'Enter a correct value'}</span>
+          ? <span>{props.errorMessage || 'Введите верное значение'}</span>
           : null
       }
     </div>
-  );
-};
+  )
+}
 
-export default Input;
+export default Input
